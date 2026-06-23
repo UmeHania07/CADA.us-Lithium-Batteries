@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr {
+  @apply block;
+}
+
+* {
+  font-family: Outfit;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  @apply hidden
+}
+
+@media (max-width:640px) {
+  a.active {
+    background-color: black;
+    color: white;
+  }
+}
+
+.verify {
+  animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hero section ke text ko animate karne ke liye simple fadeInUp */
+.animate-fadeInUp {
+  animation: fadeInUpSimple 1.2s ease-out forwards;
+}
+
+@keyframes fadeInUpSimple {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+    /* 40px neeche se shuru hoga */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* Apni asli jagah par aa jayega */
+  }
+}

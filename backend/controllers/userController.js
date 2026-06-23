@@ -1,0 +1,21 @@
+import jwt from "jsonwebtoken";
+
+// 🔐 Route for Admin Login Only
+const adminLogin = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+
+    // Direct .env file se check ho raha hai, database ki zaroorat nahi hai
+    if (email === process.env.ADMIN_EMAIL && password === process.env.ADMIN_PASSWORD) {
+      const token = jwt.sign(email + password, process.env.JWT_SECRET);
+      res.json({ success: true, token });
+    } else {
+      res.json({ success: false, message: "Invalid Admin Credentials" });
+    }
+  } catch (error) {
+    console.log(error);
+    res.json({ success: false, message: error.message });
+  }
+};
+
+export { adminLogin };
