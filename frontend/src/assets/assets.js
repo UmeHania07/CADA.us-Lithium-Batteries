@@ -20,6 +20,5 @@ export const assets = {
   about_img,
   contact_img,
   statesection,
-  map,
-
+  map
 }
