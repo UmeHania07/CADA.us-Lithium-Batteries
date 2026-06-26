@@ -81,7 +81,7 @@ const ProductDetail = () => {
                         <div><span className='text-gray-500'>Category:</span> <strong className='text-gray-800 ml-1'>{product.category}</strong></div>
                         <div><span className='text-gray-500'>Chemistry:</span> <strong className='text-gray-800 ml-1'>LiFePO4</strong></div>
                         <div><span className='text-gray-500'>Origin:</span> <strong className='text-gray-800 ml-1'>USA Engineered</strong></div>
-                        <div><span className='text-gray-500'>Warranty:</span> <strong className='text-gray-800 ml-1'>5 Years Trust</strong></div>
+                        <div><span className='text-gray-500'>Warranty:</span> <strong className='text-gray-800 ml-1'>{product.warranty}</strong></div>
                     </div>
 
                     {/* Action Button */}
