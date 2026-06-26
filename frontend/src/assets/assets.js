@@ -2,8 +2,8 @@
 // src/assets/assets.js
 
 import logo from './logo.png'
-import Hero1 from './Hero1.png'
-import Battery from './battery.avif'
+import hero1 from './hero1.png'
+import battery from './battery.avif'
 import exchange_icon from './exchange_icon.png'
 import quality_icon from './quality_icon.png'
 import support_img from './support_img.png'
@@ -17,8 +17,8 @@ import map2 from './map2.png'
 
 export const assets = {
   logo,
-  Hero1,
-  Battery,
+  hero1,
+  battery,
   exchange_icon,
   quality_icon,
   support_img,
