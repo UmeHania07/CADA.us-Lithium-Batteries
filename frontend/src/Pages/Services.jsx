@@ -1,5 +1,5 @@
 import React from "react";
-import { servicesData } from "../data/mockData";
+import { servicesData } from "../Data/mockData";
 import Title from "../components/Title";
 import { FiDownload } from "react-icons/fi"; // Download icon import kiya hai
 
