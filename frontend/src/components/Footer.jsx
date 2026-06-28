@@ -21,13 +21,13 @@ const Footer = () => {
                     </p>
                     {/* Social Media Icons */}
                     <div className='flex items-center gap-4 mt-2'>
-                        <a href="#" target="_blank" className='p-2 bg-gray-100 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300'>
+                        <a href="https://www.facebook.com/Cadabatteries/" target="_blank" rel="noopener noreferrer" className='p-2 bg-gray-100 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300'>
                             <FaFacebookF size={16} />
                         </a>
-                        <a href="#" target="_blank" className='p-2 bg-gray-100 rounded-full hover:bg-pink-600 hover:text-white transition-all duration-300'>
+                        <a href="https://www.instagram.com/cadabatteries" target="_blank" rel="noopener noreferrer" className='p-2 bg-gray-100 rounded-full hover:bg-pink-600 hover:text-white transition-all duration-300'>
                             <FaInstagram size={16} />
                         </a>
-                        <a href="#" target="_blank" className='p-2 bg-gray-100 rounded-full hover:bg-blue-800 hover:text-white transition-all duration-300'>
+                        <a href="https://www.linkedin.com/company/cadabatteries/" target="_blank" rel="noopener noreferrer" className='p-2 bg-gray-100 rounded-full hover:bg-blue-800 hover:text-white transition-all duration-300'>
                             <FaLinkedinIn size={16} />
                         </a>
                     </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                         </li>
                         <li className="flex items-center gap-3 hover:text-black cursor-pointer">
                             <IoMdMail className="text-gray-700 shrink-0" size={16} />
-                            <span className="underline decoration-gray-300">cadabatteries.us@gmail.com</span>
+                            <span className="underline decoration-gray-300">info@cadabattery.com</span>
                         </li>
                     </ul>
                 </div>
