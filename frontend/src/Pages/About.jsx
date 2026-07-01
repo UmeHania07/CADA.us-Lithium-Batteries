@@ -1,10 +1,11 @@
 import React from "react";
 import Title from "../components/Title";
 import { assets } from "../assets/assets";
+import { Check, Settings, Star } from "lucide-react"; // Ensure lucide-react is installed
 
 const About = () => {
   return (
-    // Responsive padding add ki hai taake content center mein rahay
+    // Responsive padding
     <main className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
 
       {/* Header Section */}
@@ -51,45 +52,71 @@ const About = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
-      <div className='text-3xl py-8 text-center'>
-        <Title text1={"WHY"} text2={"CHOOSE US"} />
+      {/* Why Choose Us Section Styled Like Brand Personality */}
+      <div className='text-3xl py-8 text-center mt-20'>
+        <Title text1={"OUR"} text2={"BRAND PERSONALITY"} />
+        <p className="text-sm text-gray-500 mt-3 max-w-xl mx-auto">
+          We build trust through consistency, innovation, and reliability in every energy solution we deliver.
+        </p>
       </div>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 text-sm mb-28 border border-gray-100 rounded-xl overflow-hidden'>
+      {/* Modern Cards Grid Layout */}
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-8 mb-28 mt-10'>
 
-        {/* Box 1 */}
-        <div className='group border-b md:border-b-0 md:border-r px-10 md:px-16 py-12 flex flex-col gap-5 hover:bg-black transition-all duration-500 cursor-pointer'>
-          <b className="text-gray-800 group-hover:text-white transition-colors duration-500">Quality Assurance:</b>
-          <p className="text-gray-600 group-hover:text-gray-300 transition-colors duration-500">
-            Every CADA battery undergoes rigorous testing to meet international
-            safety standards, ensuring long-lasting performance and maximum
-            safety for your devices.
+        {/* Card 1 - Reliable */}
+        <div className='bg-white rounded-2xl shadow-md hover:shadow-2xl border border-gray-100/60 p-8 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-3 cursor-pointer transition-all duration-300'>
+          {/* Top Corner Shape Hint */}
+          <div className="absolute top-0 right-0 w-16 h-16 bg-red-50/30 rounded-bl-full pointer-events-none" />
+
+          {/* Icon Circle Box */}
+          <div className='w-14 h-14 bg-gradient-to-tr  from-green-600/90 to-blue-500/90 rounded-xl flex items-center justify-center text-white shadow-sm mb-6'>
+            <Check className="w-6 h-6" />
+          </div>
+
+          <h3 className='text-xl font-bold text-gray-800 uppercase tracking-wider'>Reliable</h3>
+          <div className="w-8 h-0.5 bg-blue-600 my-3 rounded-full" /> {/* Accent Line */}
+
+          <p className='text-gray-500 text-sm leading-relaxed mt-2'>
+            Our systems deliver stable and dependable performance across residential, commercial,
+            and industrial energy applications with long-term durability.
           </p>
         </div>
 
-        {/* Box 2 */}
-        <div className='group border-b md:border-b-0 md:border-r px-10 md:px-16 py-12 flex flex-col gap-5 hover:bg-black transition-all duration-500 cursor-pointer'>
-          <b className="text-gray-800 group-hover:text-white transition-colors duration-500">Innovation:</b>
-          <p className="text-gray-600 group-hover:text-gray-300 transition-colors duration-500">
-            We combine US-standard engineering with modern lithium-ion
-            technology to provide energy storage solutions that are more
-            efficient and compact than traditional options.
+        {/* Card 2 - Capable */}
+        <div className='bg-white rounded-2xl shadow-md hover:shadow-2xl border border-gray-100/60 p-8 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-3 cursor-pointer transition-all duration-300'>
+          <div className="absolute top-0 right-0 w-16 h-16 bg-red-50/30 rounded-bl-full pointer-events-none" />
+
+          <div className='w-14 h-14 bg-gradient-to-tr  from-green-600/90 to-blue-500/90 rounded-xl flex items-center justify-center text-white shadow-sm mb-6'>
+            <Settings className="w-6 h-6" />
+          </div>
+
+          <h3 className='text-xl font-bold text-gray-800 uppercase tracking-wider'>Capable</h3>
+          <div className="w-8 h-0.5 bg-blue-600 my-3 rounded-full" />
+
+          <p className='text-gray-500 text-sm leading-relaxed mt-2'>
+            Backed by advanced engineering and global expertise, we provide scalable energy
+            solutions designed for modern power demands.
           </p>
         </div>
 
-        {/* Box 3 */}
-        <div className='group px-10 md:px-16 py-12 flex flex-col gap-5 hover:bg-black transition-all duration-500 cursor-pointer'>
-          <b className="text-gray-800 group-hover:text-white transition-colors duration-500">Bilateral Trust:</b>
-          <p className="text-gray-600 group-hover:text-gray-300 transition-colors duration-500">
-            Backed by a strong Pakistan-US partnership, we prioritize
-            transparency and professional support to build lasting
-            relationships with our global customers.
+        {/* Card 3 - Reputable */}
+        <div className='bg-white rounded-2xl shadow-md hover:shadow-2xl border border-gray-100/60 p-8 flex flex-col items-center text-center relative overflow-hidden transform hover:-translate-y-3 cursor-pointer transition-all duration-300'>
+          <div className="absolute top-0 right-0 w-16 h-16 bg-red-50/30 rounded-bl-full pointer-events-none" />
+
+          <div className='w-14 h-14 bg-gradient-to-tr from-green-600/90 to-blue-500/90 rounded-xl flex items-center justify-center text-white shadow-sm mb-6'>
+            <Star className="w-6 h-6" />
+          </div>
+
+          <h3 className='text-xl font-bold text-gray-800 uppercase tracking-wider'>Reputable</h3>
+          <div className="w-8 h-0.5 bg-blue-600 my-3 rounded-full" />
+
+          <p className='text-gray-500 text-sm leading-relaxed mt-2'>
+            Trusted worldwide for quality, safety, and innovation — our solutions are built to earn
+            long-term customer confidence.
           </p>
         </div>
 
-      </div>
-    </main>
+      </div>    </main>
   );
 };
 
